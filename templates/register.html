@@ -1,0 +1,38 @@
+<!-- Theme style  -->
+{% extends "base.html" %}
+
+<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+{% import "bootstrap/wtf.html" as wtf %}
+
+  {% block content %}
+
+  <body class="text-center">
+      <div class="form-signin">
+          
+          <h1 class="h3 mb-3 font-weight-normal">Please register below</h1>
+          <br>
+          <br>
+          <form action="{{ url_for('register') }}" method="POST" style="width: 30%; position: relative; left: 35%;">
+            {{ form.hidden_tag() }}
+            {{ wtf.form_field(form.firstname) }}
+            {{ wtf.form_field(form.lastname) }}
+            {{ wtf.form_field(form.childname) }}
+            {{ wtf.form_field(form.email) }}
+            {{ wtf.form_field(form.password) }}
+            {{ wtf.form_field(form.repeat_password) }}
+            
+            
+              
+              <button class="btn btn-lg btn-primary btn-block" input type="submit" value="register" style="background-color: #08a12e;">Register</button>
+            </form>
+              
+              <p class="mt-5 mb-3 text-muted">&copy; 2020-2021</p>
+      </div>
+        
+    </body>
+  </div>
+
+
+  
+
+  {% endblock %}

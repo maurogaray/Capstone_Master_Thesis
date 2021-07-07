@@ -1,0 +1,299 @@
+{% extends "base.html" %}
+{%block content%}
+	
+	<aside id="fh5co-hero">
+		<div class="flexslider">
+			<ul class="slides">
+		   	<li style="background-image: url({{ url_for("pictures", filename="girl1") }});">
+		   		<div class="overlay-gradient"></div>
+		   		<div class="container">
+		   			<div class="row">
+			   			<div class="col-md-8 col-md-offset-2 text-center slider-text">
+			   				<div class="slider-text-inner">
+			   					<h1>Begin your at home learning adventure</h1>
+								   <br>
+								   <br>
+								   <br>
+									<h4 style="color: white;">Get a customised flexible education program anywhere in the world</h4>
+			   				</div>
+			   			</div>
+			   		</div>  
+		   		</div>
+		   	</li>
+		   	<li style="background-image: url({{ url_for("pictures", filename="boy1") }});">
+		   		<div class="overlay-gradient"></div>
+		   		<div class="container">
+		   			<div class="row">
+			   			<div class="col-md-8 col-md-offset-2 text-center slider-text">
+			   				<div class="slider-text-inner">
+			   					<h1>Customised flexible educational program from your home</h1>
+								   <br>
+								   <br>
+								   <br>
+									<h4 style="color: white;">Get a customised flexible education program anywhere in the world</h4>
+			   				</div>
+			   			</div>
+			   		</div>
+		   		</div>
+		   	</li>
+		   	<li style="background-image: url({{ url_for("pictures", filename="boy2") }});">
+		   		<div class="overlay-gradient"></div>
+		   		<div class="container">
+		   			<div class="row">
+			   			<div class="col-md-8 col-md-offset-2 text-center slider-text">
+			   				<div class="slider-text-inner">
+			   					<h1>We help you to learn new things</h1>
+								   <br>
+								   <br>
+								   <br>
+									<h4 style="color: white;">Get a customised flexible education program anywhere in the world</h4>
+			   				</div>
+			   			</div>
+			   		</div>
+		   		</div>
+		   	</li>		   	
+		  	</ul>
+	  	</div>
+	</aside>
+
+	<!-- 
+	<div id="fh5co-blog">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Who are we</h2>
+					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+				</div>
+			</div>
+		
+			<div class="row">
+				<div class="col-lg-4 col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a href="#" class="blog-img-holder" style="background-image: url(images/thundercats.jpeg);"></a>
+						<div class="blog-text">
+							<h3>The Team</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						</div> 
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a href="#" class="blog-img-holder" style="background-image: url(images/project-2.jpg);"></a>
+						<div class="blog-text">
+							<h3>Video</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						</div> 
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	-->
+
+	<br>
+	<br>
+	<br>
+
+	<div>
+		<video style="display:block; margin: 0 auto;" width="1200" height="850" controls="controls" src="static/LearnIn Video Explainer.mp4"> 
+			Your browser does not support the HTML5 Video element.
+		</video>
+
+
+	</div>
+							
+					
+
+
+
+
+	</div>
+
+	<br>
+	<br>
+
+	<div id="fh5co-explore" class="fh5co-bg-section">
+		<div class="fh5co-explore">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<h1>Who are we</h1>
+			
+					</div>
+					<div class="col-md-8 col-md-pull-1 animate-box">
+						<img class="img-responsive" src="{{url_for('static', filename='images/thundercats.jpeg')}}" alt="team" style="max-width: 70%;">
+					</div>
+
+					<div class="col-md-4 animate-box">  		   	
+						<div class="mt">
+							<br>
+							<br>
+							<div>
+								
+								<p style="font-size: x-large;">Out team is built from a wide variety of backgrounds from all over the world. What we have in common is our passion to get a quality education to everyone. We’ve built our platform with our own digital learning experiences in mind to provide a fun and easy experience for students and their parents.<p>
+							</div>
+							
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+
+
+
+	</div>
+
+
+	<div id="fh5co-course-categories">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+					<h1>Our Pillars</h1>
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-6 text-center animate-box">
+					<div class="services">
+						<span class="icon">
+							<i class="icon-world"></i>
+						</span>
+						<div class="desc">
+							<h3><a href="#">World class teaching</a></h3>
+							<p>We have sourced some of the best teachers from around the country to deliver content in their proven methodologies. </p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 text-center animate-box">
+					<div class="services">
+						<span class="icon">
+							<i class="icon-shop"></i>
+						</span>
+						<div class="desc">
+							<h3><a href="#">School experience brought to your home</a></h3>
+							<p>With our interactive tools, children can learn and play together and easily communicate to help each other and build friendships with their peers. </p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 text-center animate-box">
+					<div class="services">
+						<span class="icon">
+							<i class="icon-check"></i>
+						</span>
+						<div class="desc">
+							<h3><a href="#">State approved curriculum</a></h3>
+							<p>All of our courses are in-line with official curriculum and prepare students for high performance in standardized tests. </p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 text-center animate-box">
+					<div class="services">
+						<span class="icon">
+							<i class="icon-study"></i>
+						</span>
+						<div class="desc">
+							<h3><a href="#">Immersive school experience</a></h3>
+							<p>Allow your kid to live an immersive school experience that will allow him/her to take the best out of the school experience. </p>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-course">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+					<h1>Our Teachers</h1>
+					<p>Meet some of our world class teachers...</p>
+				</div>
+			</div>
+			<div class="row">                            
+				<div class="col-md-6 animate-box">
+					<div class="course">
+						<img src="{{url_for('static', filename='images/teacher2.jpeg')}}" class="course-img" style="background-image: url({{ url_for("pictures", filename="teacher1") }});"> 
+						</a>
+						<div class="desc" style="overflow: scroll;">
+							<h3>Mr Brandon</a></h3>
+							<p> Mr. Brandon has spent eight years teaching classes between K-6. He is super excited to experiment with technology in his teaching role at LearnIn. He is committed to providing your family with a loving and sound foundation for a lifetime of learning. </p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="course">
+						<img src="{{url_for('static', filename='images/teacher4.jpeg')}}" class="course-img" style="background-image: url({{ url_for("pictures", filename="teacher2") }});">
+						</a>
+						<div class="desc">
+							<h3>Mr Mauro</a></h3>
+							<p style="overflow: scroll;">​ Mr. Mauro has been teaching for 10 years. When he’s not teaching, he is at home with his two kids: Lily and Tristan! All three of his kids are enrolled in LearnIn so he has the opportunity to create great memories of our school while sharing them with students around the country."</p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="course">
+						<img src="{{url_for('static', filename='images/teacher3.jpeg')}}" class="course-img" style="background-image: url({{ url_for("pictures", filename="teacher3") }});">
+						</a>
+						<div class="desc" style="overflow: scroll;">
+							<h3><a href="#"></a>Miss Ladislaya</a></h3>
+							<p>Ms. Ladi's dream is to run an amazing school that has a nurturing, loving environment where children can experience new challenges that will help build their confidence while they play and learn. She takes that spirit to the classes at LearnIn.</p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="course">
+						<img src="{{url_for('static', filename='images/teacher1.jpeg')}}" class="course-img" style="max-width: 100%; max-height: auto;">
+						</a>
+						<div class="desc" style="overflow: scroll;">
+							<h3><a href="#">Dr Nachu</a></h3>
+							<p>Dr Nachu has been exposed to cutting edge technolgy all her life. However her true passion is teaching young kids. Dr Nachu graduated top of her cohort at MIT, where she studied quantum engineering. Dr Nachu wanted to pivot, so she came to LeanIn </p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+
+	
+
+	
+	
+
+	
+
+	
+
+	<footer id="fh5co-footer" role="contentinfo" style="background-image: url({{ url_for("pictures", filename="img_bg_4") }});">
+		
+
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">&copy; 2021 LearnIn.</small> 
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	{%endblock%}
+
+
+	

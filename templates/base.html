@@ -1,0 +1,136 @@
+
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{% block title %}{% endblock title %}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="leanin" />
+	<meta name="keywords" content="learmin" />
+	<meta name="author" content="learnin" />
+
+	
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{{url_for('static', filename='css/animate.css')}}">  
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{{url_for('static', filename='css/icomoon.css')}}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.css')}}">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="{{url_for('static', filename='css/magnific-popup.css')}}">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="{{url_for('static', filename='css/owl.carousel.min.css')}}">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/owl.theme.default.min.css')}}">
+
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="{{url_for('static', filename='css/flexslider.css')}}">
+
+	<!-- Pricing -->
+	<link rel="stylesheet" href="{{url_for('static', filename='css/pricing.css')}}">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+
+	<!-- Modernizr JS -->
+	<script src="{{url_for('static', filename='js/modernizr-2.6.2.min.js')}}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+	<!-- <div class="fh5co-loader"></div> -->
+	
+	<div id="page">
+	<nav class="fh5co-nav" role="navigation">
+		<div class="top-menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2">
+						<div id="fh5co-logo"><a href="{{ url_for('index') }}">LearnIn<span>.</span></a></div>
+					</div>
+					<div class="col-xs-10 text-right menu-1">
+						<ul>
+							<li class="active"><a href="index.html">Home</a></li>
+							
+							
+							<li><a href="{{ url_for('pricing') }}">Pricing</a></li>
+							
+							<li class="btn-cta"><a href="{{ url_for('login') }}"><span>Login</span></a></li>
+							<li class="btn-cta"><a href="{{ url_for('register') }}"><span>Register</span></a></li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</nav>
+	
+	{%block content%}
+
+	{%endblock%}
+	
+	<!-- jQuery -->
+	<script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+	<!-- jQuery Easing -->
+	<script src="{{url_for('static', filename='js/jquery.easing.1.3.js')}}"></script>
+	<!-- Bootstrap -->
+	<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+	<!-- Waypoints -->
+	<script src="{{url_for('static', filename='js/jquery.waypoints.min.js')}}"></script>
+	<!-- Stellar Parallax -->
+	<script src="{{url_for('static', filename='js/jquery.stellar.min.js')}}"></script>
+	<!-- Carousel -->
+	<script src="{{url_for('static', filename='js/owl.carousel.min.js')}}"></script>
+	<!-- Flexslider -->
+	<script src="{{url_for('static', filename='js/jquery.flexslider-min.js')}}"></script>
+	<!-- countTo -->
+	<script src="{{url_for('static', filename='js/jquery.countTo.js')}}"></script>
+	<!-- Magnific Popup -->
+	<script src="{{url_for('static', filename='js/jquery.magnific-popup.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/magnific-popup-options.js')}}"></script>
+	<!-- Count Down -->
+	<script src="{{url_for('static', filename='js/simplyCountdown.js')}}"></script>
+	<!-- Main -->
+	<script src="{{url_for('static', filename='js/main.js')}}"></script>
+	<script>
+    var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
+
+    // default example
+    simplyCountdown('.simply-countdown-one', {
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate()
+    });
+
+    //jQuery example
+    $('#simply-countdown-losange').simplyCountdown({
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+        enableUtc: false
+    });
+	</script>
+	</body>
+</html>
+
+
